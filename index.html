@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App mapa interactivo del dolor humano</title>
+    <!-- theme color -->
+    <meta name="theme-color" content="#009cdf">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="lottie/lottie-player.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+
+    
+        <header class="header">
+            <section class="secciones-primario">
+                <img src="img/logo/abbott.png" alt="">
+                <h1>MAPA INTERACTIVO <span>DEL DOLOR HUMANO</span></h1>
+            </section>
+            <section class="secciones-segundario">
+                <div id="secciones">
+                    <a href="#mapa" id="btn-mapa"><span>Mapa</span></a>
+                    <a href="#umbrales" id="btn-umbrales"><span>Umbrales</span></a>
+                </div>
+                <div id="linea-bottom">
+                    <div id="linea-mapa" class="active"></div>
+                    <div id="linea-umbrales"></div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="cards-casos-dolor">
+
+                <template id="card-template">
+                    <article class="card">
+                        <div class="contenedor-img-card">
+                            <img>
+                        </div>
+                        <div>
+                            <div class="padding-card">
+                                <p class="descripcion"></p>
+                            </div>
+                            <div class="seccion-media-card">
+                                <p>Umbral del dolor</p>
+                                <hr>
+                            </div>
+                            <div class="padding-card">
+                                <input class="escala-dolor" type="range" name="escala" steps="1" min="1" max="10" value="1">
+                                <div class="numeros-escala">
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                    <span>6</span>
+                                    <span>7</span>
+                                    <span>8</span>
+                                    <span>9</span>
+                                    <span>10</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </article>
+                </template>
+            </section>
+            <section class="umbrales-info container none" >
+                <template id="template-umbrales">
+                    <article>
+                        <div></div>
+                        <div>
+                            <h2>
+                                
+                            </h2>
+                            <p></p>
+                        </div>
+                    </article>
+                </template>
+
+                <p>Referencia
+                    Vicente M, Delado S, Bandrés F, et al. Valoración del dolor. Revisión comparativa de escalas
+                    y cuestionarios. Rev Soc Esp Dolor. 2018;25(4):228-236.
+                </p>
+            </section>
+        </main>
+        <footer class="footer">
+        <lottie-player id="lottie-element" src="lottie/animation.json" background="transparent" speed="1" style="width: 50px; height: 50px" direction="1" mode="normal" loop autoplay></lottie-player>
+            <button id="btn-calcular-limpiar" data-type-btn="calcular">Calcular</button>
+            
+            <section class="resultados umbrales-info">
+                <article>
+                    <div>2</div>
+                    <div>
+                        <h2>
+                            UMBRAL DE DOLOR MEDIO-ALTO
+                        </h2>
+                        <p>Tienes una capacidad mayor para tolerar la sensación de dolor</p>
+                    </div>
+                </article>
+            </section>
+
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+[
+  {
+    "link_img": "img/hoja_papel.png",
+    "descripcion": "Cortarse con una hoja de papel"
+  },
+  {
+    "link_img": "img/pisar_enchufe_descalzo.png",
+    "descripcion": "Pisar un enchufe descalzo"
+  },
+  {
+    "link_img": "img/golpearse_dedo_menique_pie.png",
+    "descripcion": "Golpearse el dedo meñique del pie"
+  },
+  {
+    "link_img": "img/morderse_la_lengua.png",
+    "descripcion": "Morderse la lengua por accidente"
+  },
+  {
+    "link_img": "img/golpe_codo.png",
+    "descripcion": "Golpearse el codo contra una superficie dura"
+  },
+  {
+    "link_img": "img/quemadura.png",
+    "descripcion": "Quemarse con agua caliente"
+  },
+  {
+    "link_img": "img/dolor_espalda.png",
+    "descripcion": "Levantar un objeto de manera incorrecta y no poder enderezarse"
+  },
+  {
+    "link_img": "img/machucada.png",
+    "descripcion": "Cerrar una puerta en un dedo"
+  },
+  {
+    "link_img": "img/cremallera.png",
+    "descripcion": "Pellizcarse accidentalmente con una cremallera"
+  },
+  {
+    "link_img": "img/ampollas.png",
+    "descripcion": "Caminar con calzado inadecuado que causa ampollas"
+  }
+]
